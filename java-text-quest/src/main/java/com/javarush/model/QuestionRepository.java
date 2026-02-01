@@ -2,6 +2,7 @@ package com.javarush.model;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.javarush.exception.InitGameException;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,14 +22,14 @@ public class QuestionRepository {
         try {
            InputStream inputStream =  getClass().getClassLoader().getResourceAsStream("questions.json");
            if (inputStream == null) {
-               throw new RuntimeException("questions.json not found");
+               throw new InitGameException("questions.json not found");
            }
            List<Question> questionsList = objectMapper.readValue(inputStream, new TypeReference<List<Question>>() {});
            for (Question question : questionsList) {
                questions.put(question.getId(), question);
            }
         } catch (IOException e) {
-            throw new RuntimeException("Failed to load questions", e);
+            throw new InitGameException("Failed to load questions", e);
         }
 
     }
