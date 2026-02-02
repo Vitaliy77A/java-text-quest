@@ -1,4 +1,7 @@
-package com.javarush.model;
+package com.javarush;
+
+import com.javarush.model.Question;
+import com.javarush.model.QuestionRepository;
 
 public class TestMain {
     public static void main(String[] args) {

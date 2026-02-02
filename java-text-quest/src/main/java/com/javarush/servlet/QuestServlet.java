@@ -11,41 +11,45 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-@WebServlet(name = "QuestServlet", value = "/quest")
+@WebServlet(name = "QuestServlet", value = "/game")
 public class QuestServlet extends HttpServlet {
+
     private final QuestionRepository questionRepository = new QuestionRepository();
+
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-      HttpSession session = req.getSession();
-      Integer questionId = (Integer) session.getAttribute("currentQuestionId");
-      if (questionId == null) {
-          questionId = 1;
-        session.setAttribute("currentQuestionId", questionId );
-      }
-      Question question = questionRepository.getQuestionById(questionId);
-      req.setAttribute("question", question);
-      getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
-    }
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException  {
-        String nextIdString = req.getParameter("nextQuestionId");
-        if (nextIdString == null) {
-         req.getSession().invalidate();
-         resp.sendRedirect(req.getContextPath() + "/quest");
-         return;
-        }
-        try {
-            int nextId = Integer.parseInt(nextIdString);
-            HttpSession session = req.getSession();
-            session.setAttribute("currentQuestionId", nextId);
-        } catch (NumberFormatException e) {
-            req.getSession().invalidate();
-            resp.sendRedirect(req.getContextPath() + "/quest");
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+
+        if (session.getAttribute("nickname") == null) {
+            resp.sendRedirect("/jsp/quest.jsp");
             return;
         }
 
-        resp.sendRedirect(req.getContextPath() + "/quest");
+        Integer currentId = (Integer) session.getAttribute("currentQuestionId");
+        if (currentId == null) currentId = 1;
 
+        showQuestion(currentId, req, resp);
     }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession session = req.getSession();
+        String nextIdStr = req.getParameter("nextQuestionId");
+
+        if (nextIdStr == null) {
+            resp.sendRedirect("start");
+            return;
+        }
+
+        int nextId = Integer.parseInt(nextIdStr);
+        session.setAttribute("currentQuestionId", nextId);
+
+        showQuestion(nextId, req, resp);
+    }
+
+    private void showQuestion(int id, HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Question question = questionRepository.getQuestionById(id);
+        req.setAttribute("question", question);
+        req.getRequestDispatcher("/jsp/quest.jsp").forward(req, resp);
+    }
 }
