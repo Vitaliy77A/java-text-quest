@@ -19,6 +19,12 @@
         </p>
         <p>Введіть своє ім'я:</p>
 
+        <c:if test="${param.error != null}">
+                    <div class="error-message">
+                        Помилка: Ім'я не може бути пустим!
+                    </div>
+                </c:if>
+
         <form action="${pageContext.request.contextPath}/start" method="post">
             <input type="text" name="nickname" placeholder="Ваш нікнейм" required>
             <button type="submit" class="btn btn-start">ПОЧАТИ ГРУ</button>
