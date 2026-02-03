@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 
@@ -16,6 +18,7 @@ import java.io.IOException;
 public class QuestServlet extends HttpServlet {
 
     private final QuestService questService = new QuestServiceImp();
+    private static final Logger LOGGER = LogManager.getLogger(QuestServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -43,6 +46,7 @@ public class QuestServlet extends HttpServlet {
         String nextIdStr = req.getParameter("nextQuestionId");
 
         if (nextIdStr == null) {
+            LOGGER.info("User '{}' restarted the game.", session.getAttribute("nickname"));
             resp.sendRedirect("start");
             return;
         }
@@ -51,11 +55,15 @@ public class QuestServlet extends HttpServlet {
 
             int nextId = Integer.parseInt(nextIdStr);
             session.setAttribute("currentQuestionId", nextId);
+            Question question = questService.getQuestionById(nextId);
+            if (question.getGameState() != null) {
+                LOGGER.info("Game Finished. User: '{}', Result: '{}'", session.getAttribute("nickname"), question.getGameState());
+            }
 
             doGet(req, resp);
 
         } catch (NumberFormatException e) {
-
+            LOGGER.error("INVALID nextQuestionId received from user '{}': {}", session.getAttribute("nickname"), nextIdStr, e);
             resp.sendRedirect("start");
         }
     }

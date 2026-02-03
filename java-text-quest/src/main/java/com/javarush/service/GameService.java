@@ -1,6 +1,6 @@
 package com.javarush.service;
 
-public class GameService {
+public class GameService  {
 
     public boolean isValidNickname(String nickname) {
         return nickname != null && !nickname.trim().isEmpty();

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class QuestionRepository {
+public class QuestionRepository  {
     private final Map<Integer, Question> questions = new HashMap<>();
 
     public QuestionRepository() {
