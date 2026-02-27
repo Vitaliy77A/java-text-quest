@@ -1,74 +1,166 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    color: #333;
+    overflow: hidden;
+    background-color: #000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: url('../imj/emirates-stadium-london.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(0px) brightness(40%);
+    z-index: -1;
 }
 
 .card {
-    background: white;
-    width: 600px;
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width: 620px;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 1, 7, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     overflow: hidden;
     text-align: center;
+    color: #fff;
 }
 
 .header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+    background: rgba(10, 10, 10, 0.6);
+    padding: 25px;
+    border-bottom: 2px solid #EF0107;
 }
 
-.header h1 { margin: 0; font-size: 24px; }
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #EF0107;
+}
 
-.user-info { font-size: 14px; margin-top: 5px; opacity: 0.9; }
+.user-info {
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0.8;
+    color: #ccc;
+}
 
-.content { padding: 30px; }
+.content { padding: 35px; }
 
-.question-text { font-size: 22px; margin-bottom: 25px; font-weight: bold; }
+.story-box, .question-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(239, 1, 7, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 20px 25px;
+    border-radius: 4px;
+    border-left: 3px solid #EF0107;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.input-label {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #aaa;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 input[type="text"] {
-    padding: 12px;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 14px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(239, 1, 7, 0.4);
+    border-radius: 6px;
     font-size: 16px;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    transition: border-color 0.2s;
+    color: #fff;
+    text-align: center;
 }
+
+input[type="text"]::placeholder { color: #666; }
+
+input[type="text"]:focus {
+    border-color: #EF0107;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
 
 .btn {
     display: block;
     width: 100%;
-    margin: 10px 0;
-    padding: 15px;
+    margin: 15px 0;
+    padding: 16px;
     font-size: 16px;
+    font-weight: 800;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    transition: 0.3s;
-    color: white;
-    background-color: #2196F3;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
-.btn:hover { opacity: 0.9; }
-.btn-start { background-color: #ff9800; font-weight: bold; }
-.btn-answer { background-color: #4CAF50; }
-.btn-restart { background-color: #f44336; }
+
+.btn:active { transform: translateY(2px); }
+
+.btn-start {
+    background-color: #c70005;
+    color: #fff;
+    border: none;
+}
+.btn-start:hover { background-color: #EF0107; }
+
+
+.btn-answer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #EF0107;
+    color: #fff;
+}
+.btn-answer:hover {
+    background-color: #EF0107;
+    color: #fff;
+}
+
+
+.btn-restart {
+    background-color: #f0c500;
+    color: #000;
+    border: none;
+    margin-top: 25px;
+}
+.btn-restart:hover { background-color: #ffe040; }
 
 .error-message {
-    color: #721c24;
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    padding: 10px;
-    border-radius: 5px;
+    color: #ff5b5b;
+    background-color: rgba(50, 0, 0, 0.8);
+    border: 1px solid #EF0107;
+    padding: 12px;
+    border-radius: 6px;
     margin-bottom: 15px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 14px;
 }
+
+.game-status {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.status-win { color: #4CAF50; }
+.status-loss { color: #ff3339; }
