@@ -1,178 +1,215 @@
 [
   {
     "id": 1,
-    "text": "Перше тренування на базі 'Колні'. Мікель Артета просить тебе зіграти опорника, хоча ти звик діяти ближче до атаки. Що зробиш?",
+    "textUk": "Перше тренування на базі 'Колні'. Мікель Артета просить тебе зіграти опорника, хоча ти звик діяти ближче до атаки. Що зробиш?",
+    "textEn": "First training session at Colney. Mikel Arteta asks you to play as a defensive midfielder, even though you are used to playing closer to the attack. What will you do?",
     "answers": [
       {
-        "text": "Зіграти там, де просить тренер",
+        "textUk": "Зіграти там, де просить тренер",
+        "textEn": "Play where the coach asks",
         "nextQuestionId": 2
       },
       {
-        "text": "Сперечатися і вимагати свою позицію",
+        "textUk": "Сперечатися і вимагати свою позицію",
+        "textEn": "Argue and demand your usual position",
         "nextQuestionId": 101
       }
     ]
   },
   {
     "id": 101,
-    "text": "Артета не терпить порушення дисципліни. Тебе відправляють у дубль, і ти втрачаєш шанс закріпитися в основі.",
+    "textUk": "Артета не терпить порушення дисципліни. Тебе відправляють у дубль, і ти втрачаєш шанс закріпитися в основі.",
+    "textEn": "Arteta doesn't tolerate indiscipline. You are sent to the reserves, losing your chance to secure a spot in the starting XI.",
     "gameState": "LOSS"
   },
   {
     "id": 2,
-    "text": "Ти дебютуєш на Емірейтс. Рахунок 0:0, 80-та хвилина. У тебе м'яч перед штрафним суперника, але ти бачиш, що Букайо Сака відкривається у вільну зону.",
+    "textUk": "Ти дебютуєш на Емірейтс. Рахунок 0:0, 80-та хвилина. У тебе м'яч перед штрафним суперника, але ти бачиш, що Букайо Сака відкривається у вільну зону.",
+    "textEn": "You debut at the Emirates. Score is 0:0, 80th minute. You have the ball just outside the penalty area, but you see Bukayo Saka making a run into open space.",
     "answers": [
       {
-        "text": "Пробити самому здалеку",
+        "textUk": "Пробити самому здалеку",
+        "textEn": "Take a long shot yourself",
         "nextQuestionId": 102
       },
       {
-        "text": "Віддати розрізну передачу на Сака",
+        "textUk": "Віддати розрізну передачу на Сака",
+        "textEn": "Play a through ball to Saka",
         "nextQuestionId": 3
       }
     ]
   },
   {
     "id": 102,
-    "text": "М'яч летить високо на трибуни. Вболівальники розчаровані, матч закінчується 0:0. Преса критикує тебе за егоїзм.",
+    "textUk": "М'яч летить високо на трибуни. Вболівальники розчаровані, матч закінчується 0:0. Преса критикує тебе за егоїзм.",
+    "textEn": "The ball flies high into the stands. The fans are disappointed, the match ends 0:0. The press criticizes you for being selfish.",
     "gameState": "LOSS"
   },
   {
     "id": 3,
-    "text": "Сака забиває з твого ідеального пасу! Наступного дня журналіст провокує тебе: каже, що команді просто пощастило.",
+    "textUk": "Сака забиває з твого ідеального пасу! Наступного дня журналіст провокує тебе: каже, що команді просто пощастило.",
+    "textEn": "Saka scores from your perfect assist! The next day, a journalist provokes you, saying the team just got lucky.",
     "answers": [
       {
-        "text": "Заявити, що ми розірвемо всіх",
+        "textUk": "Заявити, що ми розірвемо всіх",
+        "textEn": "Declare that we will destroy everyone",
         "nextQuestionId": 103
       },
       {
-        "text": "Спокійно відповісти, що ми робимо свою роботу",
+        "textUk": "Спокійно відповісти, що ми робимо свою роботу",
+        "textEn": "Calmly reply that we are just doing our job",
         "nextQuestionId": 4
       }
     ]
   },
   {
     "id": 103,
-    "text": "Твоя самовпевненість зіграла злий жарт. Тиск медіа ламає тебе психологічно, і ти провалюєш наступні три гри.",
+    "textUk": "Твоя самовпевненість зіграла злий жарт. Тиск медіа ламає тебе психологічно, і ти провалюєш наступні три гри.",
+    "textEn": "Your overconfidence played a cruel joke. The media pressure breaks you psychologically, and you flop in the next three games.",
     "gameState": "LOSS"
   },
   {
     "id": 4,
-    "text": "Північнолондонське дербі проти Тоттенгема! Суперник жорстко фолить проти Мартіна Едегора. Гра загострюється. Твої дії?",
+    "textUk": "Північнолондонське дербі проти Тоттенгема! Суперник жорстко фолить проти Мартіна Едегора. Гра загострюється. Твої дії?",
+    "textEn": "North London Derby against Tottenham! An opponent brutally fouls Martin Ødegaard. The game heats up. Your actions?",
     "answers": [
       {
-        "text": "Жорстко влетіти в суперника у відповідь",
+        "textUk": "Жорстко влетіти в суперника у відповідь",
+        "textEn": "Make a harsh retaliatory tackle",
         "nextQuestionId": 104
       },
       {
-        "text": "Вимагати картку в судді, зберігаючи холодну голову",
+        "textUk": "Вимагати картку в судді, зберігаючи холодну голову",
+        "textEn": "Demand a card from the referee, keeping a cool head",
         "nextQuestionId": 5
       }
     ]
   },
   {
     "id": 104,
-    "text": "Пряма червона картка! Ти залишаєш команду в меншості, і Арсенал програє найважливіше дербі.",
+    "textUk": "Пряма червона картка! Ти залишаєш команду в меншості, і Арсенал програє найважливіше дербі.",
+    "textEn": "Straight red card! You leave your team a man down, and Arsenal loses the crucial derby.",
     "gameState": "LOSS"
   },
   {
     "id": 5,
-    "text": "Суддя дає жовту супернику. Ми заробляємо штрафний. Артета з бровки показує, щоб ти виконував стандарт.",
+    "textUk": "Суддя дає жовту супернику. Ми заробляємо штрафний. Артета з бровки показує, щоб ти виконував стандарт.",
+    "textEn": "The ref gives a yellow to the opponent. We earn a free kick. Arteta signals from the touchline for you to take it.",
     "answers": [
       {
-        "text": "Пробити хитрим ударом під стінкою",
+        "textUk": "Пробити хитрим ударом під стінкою",
+        "textEn": "Try a tricky shot under the wall",
         "nextQuestionId": 105
       },
       {
-        "text": "Навісити на Габріела у центр",
+        "textUk": "Навісити на Габріела у центр",
+        "textEn": "Cross it to Gabriel in the center",
         "nextQuestionId": 6
       }
     ]
   },
   {
     "id": 105,
-    "text": "Воротар 'шпор' легко читає твій задум і забирає м'яч. Шанс на перемогу втрачено.",
+    "textUk": "Воротар 'шпор' легко читає твій задум і забирає м'яч. Шанс на перемогу втрачено.",
+    "textEn": "Spurs' goalkeeper easily reads your intention and saves the ball. The chance for victory is lost.",
     "gameState": "LOSS"
   },
   {
     "id": 6,
-    "text": "Габріел вколочує м'яч головою! Перемога! Але після матчу ти відчуваєш різкий біль у стегні. Попереду матч Ліги Чемпіонів.",
+    "textUk": "Габріел вколочує м'яч головою! Перемога! Але після матчу ти відчуваєш різкий біль у стегні. Попереду матч Ліги Чемпіонів.",
+    "textEn": "Gabriel smashes the ball in with a header! Victory! But after the match, you feel a sharp pain in your thigh. A Champions League game is next.",
     "answers": [
       {
-        "text": "Послухати лікарів і пропустити гру",
+        "textUk": "Послухати лікарів і пропустити гру",
+        "textEn": "Listen to the doctors and miss the game",
         "nextQuestionId": 7
       },
       {
-        "text": "Приховати біль і вийти на поле",
+        "textUk": "Приховати біль і вийти на поле",
+        "textEn": "Hide the pain and step onto the pitch",
         "nextQuestionId": 106
       }
     ]
   },
   {
     "id": 106,
-    "text": "На 10-й хвилині ти отримуєш розрив м'яза. Сезон для тебе закінчено. Команда залишається без лідера.",
+    "textUk": "На 10-й хвилині ти отримуєш розрив м'яза. Сезон для тебе закінчено. Команда залишається без лідера.",
+    "textEn": "In the 10th minute, you tear a muscle. Your season is over. The team is left without a leader.",
     "gameState": "LOSS"
   },
   {
     "id": 7,
-    "text": "Ти відновився якраз до 'золотого матчу' АПЛ проти Манчестер Сіті. Рахунок 1:1. Гвардіола випускає свіжого Голанда. Артета кричить тобі опуститися глибше.",
+    "textUk": "Ти відновився якраз до 'золотого матчу' АПЛ проти Манчестер Сіті. Рахунок 1:1. Гвардіола випускає свіжого Голанда. Артета кричить тобі опуститися глибше.",
+    "textEn": "You recovered just in time for the EPL 'title decider' against Manchester City. Score is 1:1. Guardiola brings on a fresh Haaland. Arteta shouts for you to drop deeper.",
     "answers": [
       {
-        "text": "Залишитися в атаці, чекаючи на контрвипад",
+        "textUk": "Залишитися в атаці, чекаючи на контрвипад",
+        "textEn": "Stay in attack, waiting for a counter",
         "nextQuestionId": 107
       },
       {
-        "text": "Виконати настанову і допомогти захисту",
+        "textUk": "Виконати настанову і допомогти захисту",
+        "textEn": "Follow instructions and help the defense",
         "nextQuestionId": 8
       }
     ]
   },
   {
     "id": 107,
-    "text": "Голанд забиває саме з твоєї зони. Сіті виграє чемпіонат, а ти стаєш головним винуватцем поразки.",
+    "textUk": "Голанд забиває саме з твоєї зони. Сіті виграє чемпіонат, а ти стаєш головним винуватцем поразки.",
+    "textEn": "Haaland scores exactly from your zone. City wins the championship, and you become the main culprit of the defeat.",
     "gameState": "LOSS"
   },
   {
     "id": 8,
-    "text": "Ти ідеально відпрацьовуєш у захисті. Йде 90+2 хвилина, остання атака Арсеналу. Деклан Райс віддає тобі пас у центр.",
+    "textUk": "Ти ідеально відпрацьовуєш у захисті. Йде 90+2 хвилина, остання атака Арсеналу. Деклан Райс віддає тобі пас у центр.",
+    "textEn": "You defend perfectly. It's the 90+2 minute, Arsenal's last attack. Declan Rice passes to you in the center.",
     "answers": [
       {
-        "text": "Спробувати обіграти Родрі один в один",
+        "textUk": "Спробувати обіграти Родрі один в один",
+        "textEn": "Try to beat Rodri one-on-one",
         "nextQuestionId": 108
       },
       {
-        "text": "Швидко перевести м'яч на фланг на Мартінеллі",
+        "textUk": "Швидко перевести м'яч на фланг на Мартінеллі",
+        "textEn": "Quickly switch the ball to Martinelli on the wing",
         "nextQuestionId": 9
       }
     ]
   },
   {
     "id": 108,
-    "text": "Родрі жорстко, але чисто відбирає м'яч. Звучить фінальний свисток. 'Золото' дістається Манчестеру.",
+    "textUk": "Родрі жорстко, але чисто відбирає м'яч. Звучить фінальний свисток. 'Золото' дістається Манчестеру.",
+    "textEn": "Rodri tackles you hard but cleanly. The final whistle blows. The title goes to Manchester.",
     "gameState": "LOSS"
   },
   {
     "id": 9,
-    "text": "Мартінеллі на швидкості вривається у штрафний і прострілює. Ти забігаєш на ближню стійку, але бачиш, що Кай Гаверц абсолютно вільний на дальній.",
+    "textUk": "Мартінеллі на швидкості вривається у штрафний і прострілює. Ти забігаєш на ближню стійку, але бачиш, що Кай Гаверц абсолютно вільний на дальній.",
+    "textEn": "Martinelli bursts into the box with pace and crosses. You run to the near post but see Kai Havertz completely unmarked at the far post.",
     "answers": [
       {
-        "text": "Пропустити м'яч поміж ніг на Гаверца",
+        "textUk": "Пропустити м'яч поміж ніг на Гаверца",
+        "textEn": "Let the ball go through your legs to Havertz",
         "nextQuestionId": 10
       },
       {
-        "text": "Спробувати замкнути самому в падінні",
+        "textUk": "Спробувати замкнути самому в падінні",
+        "textEn": "Try to finish it yourself with a diving shot",
         "nextQuestionId": 109
       }
     ]
   },
   {
     "id": 109,
-    "text": "Донарума робить неймовірний сейв кінчиками пальців! Ти пожадібничав, і Арсенал втрачає шанс на титул.",
+    "textUk": "Донарума робить неймовірний сейв кінчиками пальців! Ти пожадібничав, і Арсенал втрачає шанс на титул.",
+    "textEn": "Donaruma makes an unbelievable fingertip save! You were greedy, and Arsenal loses the chance for the title.",
     "gameState": "LOSS"
   },
   {
     "id": 10,
-    "text": "ГЕНІАЛЬНО! Ти пропускаєш м'яч, Донарума падає в інший кут, а Кай Гаверц розстрілює порожні ворота! Емірейтс вибухає! Суддя дає свисток. ТИ ПРИНОСИШ АРСЕНАЛУ ЧЕМПІОНСТВО!",
+    "textUk": "ГЕНІАЛЬНО! Ти пропускаєш м'яч, Донарума падає в інший кут, а Кай Гаверц розстрілює порожні ворота! Емірейтс вибухає! Суддя дає свисток. ТИ ПРИНОСИШ АРСЕНАЛУ ЧЕМПІОНСТВО!",
+    "textEn": "BRILLIANT! You let the ball pass, Donaruma dives the wrong way, and Kai Havertz blasts it into an empty net! The Emirates erupts! The ref blows the whistle. YOU WIN THE TITLE FOR ARSENAL!",
     "gameState": "WIN"
   }
 ]

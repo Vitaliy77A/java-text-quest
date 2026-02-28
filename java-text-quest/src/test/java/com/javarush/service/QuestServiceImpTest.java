@@ -27,16 +27,17 @@ class QuestServiceImpTest {
     void getQuestionById_ShouldReturnQuestion_WhenExists() {
         Question mockQuestion = Question.builder()
                 .id(1)
-                .text("Question 1")
+                .textUk("Тестове питання")
+                .textEn("Test question to check the service")
                 .build();
 
         when(questionRepository.getQuestionById(1)).thenReturn(mockQuestion);
+
         Question result = questService.getQuestionById(1);
 
         assertNotNull(result);
-        assertEquals("Test question to check the service", result.getText());
+        assertEquals("Test question to check the service", result.getTextEn());
 
         verify(questionRepository, times(1)).getQuestionById(1);
     }
-
 }

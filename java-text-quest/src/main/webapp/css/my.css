@@ -164,3 +164,44 @@ input[type="text"]:focus {
 }
 .status-win { color: #4CAF50; }
 .status-loss { color: #ff3339; }
+
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    z-index: 10;
+}
+.lang-switch a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 0 5px;
+}
+.lang-switch a:hover { color: #fff; }
+.lang-switch a.active { color: #EF0107; text-shadow: 0 0 10px rgba(239, 1, 7, 0.8); }
+
+.card {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.card.fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+.card.fade-out-slow {
+    animation: fadeOut 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-20px) scale(0.95); }
+}

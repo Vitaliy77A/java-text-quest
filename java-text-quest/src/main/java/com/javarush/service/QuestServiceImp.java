@@ -4,7 +4,7 @@ import com.javarush.model.Question;
 import com.javarush.model.QuestionRepository;
 
 public class QuestServiceImp implements QuestService  {
-    private final QuestionRepository questionRepository = new QuestionRepository();
+    private QuestionRepository questionRepository = new QuestionRepository();
 
     @Override
     public Question getQuestionById(int id) {

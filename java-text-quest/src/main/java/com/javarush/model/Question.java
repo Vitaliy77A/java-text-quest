@@ -12,7 +12,8 @@ import java.util.List;
 @Builder
 public class Question {
     private int id;
-    private String text;
+    private String textUk;
+    private String textEn;
     private List<Answer> answers;
     private String gameState;
 }

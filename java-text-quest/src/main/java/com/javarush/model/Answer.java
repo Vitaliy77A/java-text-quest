@@ -11,7 +11,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class Answer {
-    private String text;
+    private String textUk;
+    private String textEn;
     private Integer nextQuestionId;
 
 }
