@@ -1,215 +1,307 @@
 [
   {
     "id": 1,
-    "textUk": "Перше тренування на базі 'Колні'. Мікель Артета просить тебе зіграти опорника, хоча ти звик діяти ближче до атаки. Що зробиш?",
-    "textEn": "First training session at Colney. Mikel Arteta asks you to play as a defensive midfielder, even though you are used to playing closer to the attack. What will you do?",
+    "textUk": "Почнемо з класики. Який легендарний стадіон був домом 'Арсеналу' цілих 93 роки до переїзду на 'Емірейтс'?",
+    "textEn": "Let's start with a classic. Which legendary stadium was Arsenal's home for 93 years before moving to the Emirates?",
     "answers": [
       {
-        "textUk": "Зіграти там, де просить тренер",
-        "textEn": "Play where the coach asks",
+        "textUk": "Гайбері",
+        "textEn": "Highbury",
         "nextQuestionId": 2
       },
       {
-        "textUk": "Сперечатися і вимагати свою позицію",
-        "textEn": "Argue and demand your usual position",
+        "textUk": "Вайт Гарт Лейн",
+        "textEn": "White Hart Lane",
         "nextQuestionId": 101
       }
     ]
   },
   {
     "id": 101,
-    "textUk": "Артета не терпить порушення дисципліни. Тебе відправляють у дубль, і ти втрачаєш шанс закріпитися в основі.",
-    "textEn": "Arteta doesn't tolerate indiscipline. You are sent to the reserves, losing your chance to secure a spot in the starting XI.",
+    "textUk": "Неправильно! Вайт Гарт Лейн — це стадіон 'Тоттенгема'. Ти провалив тест з першого ж питання.",
+    "textEn": "Wrong! White Hart Lane is Tottenham's stadium. You failed the test on the very first question.",
     "gameState": "LOSS"
   },
   {
     "id": 2,
-    "textUk": "Ти дебютуєш на Емірейтс. Рахунок 0:0, 80-та хвилина. У тебе м'яч перед штрафним суперника, але ти бачиш, що Букайо Сака відкривається у вільну зону.",
-    "textEn": "You debut at the Emirates. Score is 0:0, 80th minute. You have the ball just outside the penalty area, but you see Bukayo Saka making a run into open space.",
+    "textUk": "Під якою назвою був заснований клуб у далекому 1886 році робітниками артилерійського заводу?",
+    "textEn": "Under what name was the club founded back in 1886 by munitions workers?",
     "answers": [
       {
-        "textUk": "Пробити самому здалеку",
-        "textEn": "Take a long shot yourself",
+        "textUk": "Ройал Арсенал",
+        "textEn": "Royal Arsenal",
         "nextQuestionId": 102
       },
       {
-        "textUk": "Віддати розрізну передачу на Сака",
-        "textEn": "Play a through ball to Saka",
+        "textUk": "Дайал Сквер",
+        "textEn": "Dial Square",
         "nextQuestionId": 3
       }
     ]
   },
   {
     "id": 102,
-    "textUk": "М'яч летить високо на трибуни. Вболівальники розчаровані, матч закінчується 0:0. Преса критикує тебе за егоїзм.",
-    "textEn": "The ball flies high into the stands. The fans are disappointed, the match ends 0:0. The press criticizes you for being selfish.",
+    "textUk": "Помилка. Назва 'Ройал Арсенал' з'явилася трохи пізніше. Оригінальна назва — 'Дайал Сквер'.",
+    "textEn": "Mistake. The name 'Royal Arsenal' came a bit later. The original name was 'Dial Square'.",
     "gameState": "LOSS"
   },
   {
     "id": 3,
-    "textUk": "Сака забиває з твого ідеального пасу! Наступного дня журналіст провокує тебе: каже, що команді просто пощастило.",
-    "textEn": "Saka scores from your perfect assist! The next day, a journalist provokes you, saying the team just got lucky.",
+    "textUk": "Гравців команди офіційно називають 'Канонірами' (Gunners). А яке унікальне прізвисько закріпилося за найвідданішими вболівальниками 'Арсеналу'?",
+    "textEn": "The team's players are officially called 'Gunners'. But what unique nickname has stuck with Arsenal's most devoted fans?",
     "answers": [
       {
-        "textUk": "Заявити, що ми розірвемо всіх",
-        "textEn": "Declare that we will destroy everyone",
-        "nextQuestionId": 103
+        "textUk": "Гунери (Gooners)",
+        "textEn": "Gooners",
+        "nextQuestionId": 4
       },
       {
-        "textUk": "Спокійно відповісти, що ми робимо свою роботу",
-        "textEn": "Calmly reply that we are just doing our job",
-        "nextQuestionId": 4
+        "textUk": "Артилеристи (Artillerists)",
+        "textEn": "Artillerists",
+        "nextQuestionId": 103
       }
     ]
   },
   {
     "id": 103,
-    "textUk": "Твоя самовпевненість зіграла злий жарт. Тиск медіа ламає тебе психологічно, і ти провалюєш наступні три гри.",
-    "textEn": "Your overconfidence played a cruel joke. The media pressure breaks you psychologically, and you flop in the next three games.",
+    "textUk": "Неправильно! Справжні фанати 'Арсеналу' з гордістю називають себе 'Гунерами' (Gooners).",
+    "textEn": "Wrong! True Arsenal fans proudly call themselves 'Gooners'.",
     "gameState": "LOSS"
   },
   {
     "id": 4,
-    "textUk": "Північнолондонське дербі проти Тоттенгема! Суперник жорстко фолить проти Мартіна Едегора. Гра загострюється. Твої дії?",
-    "textEn": "North London Derby against Tottenham! An opponent brutally fouls Martin Ødegaard. The game heats up. Your actions?",
+    "textUk": "Хто зіграв найбільше матчів за 'Арсенал' за всю історію клубу (722 поєдинки)?",
+    "textEn": "Who has played the most matches for Arsenal in the club's history (722 appearances)?",
     "answers": [
       {
-        "textUk": "Жорстко влетіти в суперника у відповідь",
-        "textEn": "Make a harsh retaliatory tackle",
-        "nextQuestionId": 104
+        "textUk": "Девід О'Лірі",
+        "textEn": "David O'Leary",
+        "nextQuestionId": 5
       },
       {
-        "textUk": "Вимагати картку в судді, зберігаючи холодну голову",
-        "textEn": "Demand a card from the referee, keeping a cool head",
-        "nextQuestionId": 5
+        "textUk": "Тоні Адамс",
+        "textEn": "Tony Adams",
+        "nextQuestionId": 104
       }
     ]
   },
   {
     "id": 104,
-    "textUk": "Пряма червона картка! Ти залишаєш команду в меншості, і Арсенал програє найважливіше дербі.",
-    "textEn": "Straight red card! You leave your team a man down, and Arsenal loses the crucial derby.",
+    "textUk": "Помилка. Містер 'Арсенал' Тоні Адамс зіграв дуже багато (669 матчів), але абсолютний рекорд належить Девіду О'Лірі.",
+    "textEn": "Mistake. Mr. Arsenal Tony Adams played a lot (669 matches), but the absolute record belongs to David O'Leary.",
     "gameState": "LOSS"
   },
   {
     "id": 5,
-    "textUk": "Суддя дає жовту супернику. Ми заробляємо штрафний. Артета з бровки показує, щоб ти виконував стандарт.",
-    "textEn": "The ref gives a yellow to the opponent. We earn a free kick. Arteta signals from the touchline for you to take it.",
+    "textUk": "У якому турнірі 'Арсенал' є абсолютним рекордсменом за кількістю здобутих трофеїв (14 кубків)?",
+    "textEn": "In which tournament is Arsenal the absolute record holder for the number of trophies won (14 cups)?",
     "answers": [
       {
-        "textUk": "Пробити хитрим ударом під стінкою",
-        "textEn": "Try a tricky shot under the wall",
+        "textUk": "Кубок Ліги (Carabao Cup)",
+        "textEn": "League Cup (Carabao Cup)",
         "nextQuestionId": 105
       },
       {
-        "textUk": "Навісити на Габріела у центр",
-        "textEn": "Cross it to Gabriel in the center",
+        "textUk": "Кубок Англії (FA Cup)",
+        "textEn": "FA Cup",
         "nextQuestionId": 6
       }
     ]
   },
   {
     "id": 105,
-    "textUk": "Воротар 'шпор' легко читає твій задум і забирає м'яч. Шанс на перемогу втрачено.",
-    "textEn": "Spurs' goalkeeper easily reads your intention and saves the ball. The chance for victory is lost.",
+    "textUk": "Неправильно. Арсенал — справжній король саме Кубка Англії (FA Cup), вигравши його 14 разів!",
+    "textEn": "Wrong. Arsenal is the true king of the FA Cup, winning it 14 times!",
     "gameState": "LOSS"
   },
   {
     "id": 6,
-    "textUk": "Габріел вколочує м'яч головою! Перемога! Але після матчу ти відчуваєш різкий біль у стегні. Попереду матч Ліги Чемпіонів.",
-    "textEn": "Gabriel smashes the ball in with a header! Victory! But after the match, you feel a sharp pain in your thigh. A Champions League game is next.",
+    "textUk": "Цей тренер очолював 'Арсенал' цілих 22 роки і назавжди змінив англійський футбол. Хто він?",
+    "textEn": "This manager led Arsenal for 22 years and changed English football forever. Who is he?",
     "answers": [
       {
-        "textUk": "Послухати лікарів і пропустити гру",
-        "textEn": "Listen to the doctors and miss the game",
-        "nextQuestionId": 7
+        "textUk": "Джордж Грем",
+        "textEn": "George Graham",
+        "nextQuestionId": 106
       },
       {
-        "textUk": "Приховати біль і вийти на поле",
-        "textEn": "Hide the pain and step onto the pitch",
-        "nextQuestionId": 106
+        "textUk": "Арсен Венгер",
+        "textEn": "Arsène Wenger",
+        "nextQuestionId": 7
       }
     ]
   },
   {
     "id": 106,
-    "textUk": "На 10-й хвилині ти отримуєш розрив м'яза. Сезон для тебе закінчено. Команда залишається без лідера.",
-    "textEn": "In the 10th minute, you tear a muscle. Your season is over. The team is left without a leader.",
+    "textUk": "Помилка. Джордж Грем був крутим, але ціла епоха (з 1996 по 2018 рік) належить великому Арсену Венгеру.",
+    "textEn": "Mistake. George Graham was great, but an entire era (1996 to 2018) belongs to the great Arsène Wenger.",
     "gameState": "LOSS"
   },
   {
     "id": 7,
-    "textUk": "Ти відновився якраз до 'золотого матчу' АПЛ проти Манчестер Сіті. Рахунок 1:1. Гвардіола випускає свіжого Голанда. Артета кричить тобі опуститися глибше.",
-    "textEn": "You recovered just in time for the EPL 'title decider' against Manchester City. Score is 1:1. Guardiola brings on a fresh Haaland. Arteta shouts for you to drop deeper.",
+    "textUk": "У фіналі Ліги Чемпіонів 2006 року проти 'Барселони' Арсенал відкрив рахунок. Хто забив цей гол?",
+    "textEn": "In the 2006 Champions League final against Barcelona, Arsenal opened the scoring. Who scored that goal?",
     "answers": [
       {
-        "textUk": "Залишитися в атаці, чекаючи на контрвипад",
-        "textEn": "Stay in attack, waiting for a counter",
+        "textUk": "Тьєррі Анрі",
+        "textEn": "Thierry Henry",
         "nextQuestionId": 107
       },
       {
-        "textUk": "Виконати настанову і допомогти захисту",
-        "textEn": "Follow instructions and help the defense",
+        "textUk": "Сол Кемпбелл",
+        "textEn": "Sol Campbell",
         "nextQuestionId": 8
       }
     ]
   },
   {
     "id": 107,
-    "textUk": "Голанд забиває саме з твоєї зони. Сіті виграє чемпіонат, а ти стаєш головним винуватцем поразки.",
-    "textEn": "Haaland scores exactly from your zone. City wins the championship, and you become the main culprit of the defeat.",
+    "textUk": "Неправильно. Анрі був лідером атак, але єдиний гол у тому фіналі забив центральний захисник Сол Кемпбелл.",
+    "textEn": "Wrong. Henry led the attack, but the only goal in that final was scored by centre-back Sol Campbell.",
     "gameState": "LOSS"
   },
   {
     "id": 8,
-    "textUk": "Ти ідеально відпрацьовуєш у захисті. Йде 90+2 хвилина, остання атака Арсеналу. Деклан Райс віддає тобі пас у центр.",
-    "textEn": "You defend perfectly. It's the 90+2 minute, Arsenal's last attack. Declan Rice passes to you in the center.",
+    "textUk": "До речі, про той сезон Ліги Чемпіонів. Єнс Леманн встановив абсолютний рекорд турніру з кількості 'сухих' матчів поспіль. Скільки їх було?",
+    "textEn": "Speaking of that Champions League season. Jens Lehmann set an absolute tournament record for consecutive clean sheets. How many was it?",
     "answers": [
       {
-        "textUk": "Спробувати обіграти Родрі один в один",
-        "textEn": "Try to beat Rodri one-on-one",
-        "nextQuestionId": 108
+        "textUk": "10 матчів",
+        "textEn": "10 matches",
+        "nextQuestionId": 9
       },
       {
-        "textUk": "Швидко перевести м'яч на фланг на Мартінеллі",
-        "textEn": "Quickly switch the ball to Martinelli on the wing",
-        "nextQuestionId": 9
+        "textUk": "7 матчів",
+        "textEn": "7 matches",
+        "nextQuestionId": 108
       }
     ]
   },
   {
     "id": 108,
-    "textUk": "Родрі жорстко, але чисто відбирає м'яч. Звучить фінальний свисток. 'Золото' дістається Манчестеру.",
-    "textEn": "Rodri tackles you hard but cleanly. The final whistle blows. The title goes to Manchester.",
+    "textUk": "Неправильно! Леманн не пропускав цілих 10 матчів поспіль (853 хвилини) – цей рекорд досі ніхто не побив.",
+    "textEn": "Wrong! Lehmann didn't concede for 10 consecutive matches (853 minutes) – a record that remains unbeaten.",
     "gameState": "LOSS"
   },
   {
     "id": 9,
-    "textUk": "Мартінеллі на швидкості вривається у штрафний і прострілює. Ти забігаєш на ближню стійку, але бачиш, що Кай Гаверц абсолютно вільний на дальній.",
-    "textEn": "Martinelli bursts into the box with pace and crosses. You run to the near post but see Kai Havertz completely unmarked at the far post.",
+    "textUk": "Хто є найкращим бомбардиром в історії 'Арсеналу' (228 голів)?",
+    "textEn": "Who is the all-time top goalscorer in Arsenal's history (228 goals)?",
     "answers": [
       {
-        "textUk": "Пропустити м'яч поміж ніг на Гаверца",
-        "textEn": "Let the ball go through your legs to Havertz",
-        "nextQuestionId": 10
+        "textUk": "Іан Райт",
+        "textEn": "Ian Wright",
+        "nextQuestionId": 109
       },
       {
-        "textUk": "Спробувати замкнути самому в падінні",
-        "textEn": "Try to finish it yourself with a diving shot",
-        "nextQuestionId": 109
+        "textUk": "Тьєррі Анрі",
+        "textEn": "Thierry Henry",
+        "nextQuestionId": 10
       }
     ]
   },
   {
     "id": 109,
-    "textUk": "Донарума робить неймовірний сейв кінчиками пальців! Ти пожадібничав, і Арсенал втрачає шанс на титул.",
-    "textEn": "Donaruma makes an unbelievable fingertip save! You were greedy, and Arsenal loses the chance for the title.",
+    "textUk": "Неправильно. Іан Райт — легенда, але рекорд належить Тьєррі Анрі.",
+    "textEn": "Wrong. Ian Wright is a legend, but the record belongs to Thierry Henry.",
     "gameState": "LOSS"
   },
   {
     "id": 10,
-    "textUk": "ГЕНІАЛЬНО! Ти пропускаєш м'яч, Донарума падає в інший кут, а Кай Гаверц розстрілює порожні ворота! Емірейтс вибухає! Суддя дає свисток. ТИ ПРИНОСИШ АРСЕНАЛУ ЧЕМПІОНСТВО!",
-    "textEn": "BRILLIANT! You let the ball pass, Donaruma dives the wrong way, and Kai Havertz blasts it into an empty net! The Emirates erupts! The ref blows the whistle. YOU WIN THE TITLE FOR ARSENAL!",
+    "textUk": "У фіналі Кубка Англії 2014 року 'Арсенал' перервав свою 9-річну трофейну посуху, вирвавши перемогу над 'Галл Сіті' (3:2). Хто забив вирішальний гол в екстра-таймі?",
+    "textEn": "In the 2014 FA Cup final, Arsenal ended their 9-year trophy drought with a thrilling win over Hull City (3:2). Who scored the winning goal in extra time?",
+    "answers": [
+      {
+        "textUk": "Аарон Ремзі",
+        "textEn": "Aaron Ramsey",
+        "nextQuestionId": 11
+      },
+      {
+        "textUk": "Санті Касорла",
+        "textEn": "Santi Cazorla",
+        "nextQuestionId": 110
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "textUk": "Помилка! Касорла забив перший гол зі штрафного, але переможний м'яч на рахунку Аарона Ремзі.",
+    "textEn": "Mistake! Cazorla scored the first goal from a free-kick, but the winning goal was scored by Aaron Ramsey.",
+    "gameState": "LOSS"
+  },
+  {
+    "id": 11,
+    "textUk": "За кого 'Арсенал' заплатив найбільшу суму у своїй історії, зробивши його найдорожчим трансфером клубу?",
+    "textEn": "Who did Arsenal pay the largest fee for in their history, making him the club's record signing?",
+    "answers": [
+      {
+        "textUk": "Деклан Райс",
+        "textEn": "Declan Rice",
+        "nextQuestionId": 12
+      },
+      {
+        "textUk": "Ніколя Пепе",
+        "textEn": "Nicolas Pépé",
+        "nextQuestionId": 111
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "textUk": "Неправильно. Пепе довго тримав рекорд, але у 2023 році Деклан Райс побив його (понад 100 млн фунтів).",
+    "textEn": "Wrong. Pépé held the record for a long time, but Declan Rice broke it in 2023 (over £100m).",
+    "gameState": "LOSS"
+  },
+  {
+    "id": 12,
+    "textUk": "Хто наймолодший гравець, який коли-небудь виходив на поле в історії Прем'єр-ліги (звісно ж, за 'Арсенал')?",
+    "textEn": "Who is the youngest player to ever take the pitch in Premier League history (for Arsenal, of course)?",
+    "answers": [
+      {
+        "textUk": "Сеск Фабрегас",
+        "textEn": "Cesc Fàbregas",
+        "nextQuestionId": 112
+      },
+      {
+        "textUk": "Ітан Нванері",
+        "textEn": "Ethan Nwaneri",
+        "nextQuestionId": 13
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "textUk": "Неправильно. Фабрегас дебютував дуже рано, але абсолютний рекорд належить Ітану Нванері (15 років і 181 день).",
+    "textEn": "Wrong. Fàbregas debuted very young, but the absolute record belongs to Ethan Nwaneri (15 years and 181 days).",
+    "gameState": "LOSS"
+  },
+  {
+    "id": 13,
+    "textUk": "Фінальне питання. За яке досягнення 'Арсенал' отримав унікальний ЗОЛОТИЙ кубок Прем'єр-ліги (замість стандартного срібного)?",
+    "textEn": "Final question. For what achievement did Arsenal receive a unique GOLDEN Premier League trophy (instead of the standard silver one)?",
+    "answers": [
+      {
+        "textUk": "За чемпіонство без жодної поразки",
+        "textEn": "For winning the title without a single defeat",
+        "nextQuestionId": 14
+      },
+      {
+        "textUk": "За виграш чемпіонату та Кубка Англії 3 рази поспіль",
+        "textEn": "For winning the league and FA Cup 3 times in a row",
+        "nextQuestionId": 113
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "textUk": "Помилка на останньому кроці! Золотий кубок вручили виключно за легендарний сезон без поразок (The Invincibles).",
+    "textEn": "Mistake on the last step! The golden trophy was awarded exclusively for the legendary unbeaten season (The Invincibles).",
+    "gameState": "LOSS"
+  },
+  {
+    "id": 14,
+    "textUk": "БРАВО! Ти ідеально знаєш історію 'Арсеналу'. Від 'Дайал Сквер' до золотого кубка — ти справжній Гунер!",
+    "textEn": "BRAVO! You know Arsenal's history perfectly. From Dial Square to the golden trophy — you are a true Gooner!",
     "gameState": "WIN"
   }
 ]
